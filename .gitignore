@@ -1,0 +1,26 @@
+# Locally supplied proprietary firmware and all derived binaries/evidence
+/build/
+/katana-clock
+/vendor/
+/work/
+/state/
+/.venv/
+*.bin
+*.hex
+*.exe
+*.o
+*.asm
+MCU_RCDATA
+__pycache__/
+*.py[cod]
+*.jsonl
+.env
+.env.*
+ENTRY-PENDING.json
+ATTEMPT-CONSUMED.json
+approval*.json
+maintenance-qualified-*.json
+loader-evidence-*.json
+pending.json
+clock.lock
+/cmd/katana-clock/katana-clock

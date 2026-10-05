@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "experimental": true,
+  "hardware_accessed": false,
+  "stock_bin_sha256": "a119076916e5f90c39681cb26d2776d8cf2ea16f406af599a207cc48a525a91f",
+  "stock_hex_sha256": "aac90c80f60fb061d3fc368e0c4e76f18a19ce6901188f3cbff11bf955437ab8",
+  "bin_sha256": "e653aff4b0bf75a92729b0ff60703f5d77f65b1db82d965a0ff0c792b0ed4a69",
+  "hex_sha256": "88f9fb6430f183b85aa23f745b2bc39f7229a4ba4166479de7f45a17d26beaa2",
+  "records": 15326,
+  "populated_bytes": 240376,
+  "image_bytes": 244220,
+  "patch_covered_bytes": 2316,
+  "spans": [
+    {
+      "address": "0x9d02b868",
+      "bytes": 800,
+      "sha256": "e6e994a443891127c1fdf6236e91276d8875b7a96972658377eb8132451eeba8"
+    },
+    {
+      "address": "0x9d036e14",
+      "bytes": 152,
+      "sha256": "02dc337f7f82263021344987d7b8ee40104c7816df33ca04cd41be9ba9475244"
+    },
+    {
+      "address": "0x9d036eac",
+      "bytes": 1176,
+      "sha256": "2e3c1ac285a0894551665cc561e8458ae888a2a1a47ecf1d7a0729e0ddf17e8e"
+    },
+    {
+      "address": "0x9d00e35c",
+      "bytes": 144,
+      "sha256": "e3c204655d1ae5083fffb1dc8c4fc37c9cbc10c599744015163da5d39415ef98"
+    },
+    {
+      "address": "0x9d005030",
+      "bytes": 8,
+      "sha256": "888114907815aedf2dea811cee9372dbab980133213bdca115e71ff516bd420a"
+    },
+    {
+      "address": "0x9d00dea0",
+      "bytes": 8,
+      "sha256": "8b8b829f5616811d7379490de304d5b5821f64ca9534f18db2cc39c771fa26a2"
+    },
+    {
+      "address": "0x9d036df8",
+      "bytes": 8,
+      "sha256": "598cf3bbededea3566f50b0b6d902f7910e98d014b89040686b806bf245f3c93"
+    },
+    {
+      "address": "0x9d037344",
+      "bytes": 8,
+      "sha256": "a4eb8a904659636673711cda8f95c3a3dacb7e03c7920860981d0e44b308b007"
+    },
+    {
+      "address": "0x9d0373b0",
+      "bytes": 4,
+      "sha256": "934a0d79ed4b073c1bcef17b394d99276f23a4e3881c464614c5f29471226756"
+    },
+    {
+      "address": "0x9d00b5d8",
+      "bytes": 8,
+      "sha256": "fa9f08124e4538d83d0943a0c38154ff0427247332a82db55e36507485ef0cba"
+    }
+  ],
+  "llvm_crosscheck": true,
+  "inverse_stock_reconstruction": true,
+  "exact_sparse_coverage": true,
+  "stock_record_layout_preserved": true,
+  "installer_sha256": "22abeb87dc943d79f57b2ee2fbf33f2773a61b61e71697f68a8dfd5d3ea102c2",
+  "hardware_verified": true,
+  "change_from_hardware_tested": "SET wakes a display that the stock idle timeout darkened (a000ffa8 provenance record); explicit stock display-off still wins.",
+  "hardware_tested_predecessor": {
+    "bin_sha256": "0abc812618dd39bf16de91879b3b5f7dcc7f7d019545985bd51f045b9f7829df",
+    "hex_sha256": "413f4c76ffee281da7bc90c81ef652b646423eb29fe29f2c9c25b557c60d6f3b",
+    "patch_covered_bytes": 2316,
+    "note": "Last image observed working on hardware in the research trials."
+  },
+  "note": "Reference image identity, not approval or evidence of installed image readback. One bounded hardware trial on one device is recorded under hardware_trial.",
+  "hardware_trial": {
+    "date": "2026-10-05",
+    "observed": [
+      "transferred all 15326 records; final-reset disconnect; normal device returned with pinned version",
+      "30/30 clock ticks accepted with ACK/STATUS, CLEAR acknowledged",
+      "display dark from stock idle timeout turned on by itself when the clock started, showed HH-MM-SS, blanked on CLEAR",
+      "volume feedback took priority over the clock and the clock returned afterwards",
+      "explicit stock display-off stayed off while the clock kept running; display-on resumed the clock"
+    ],
+    "not_yet_observed": [
+      "long-duration operation"
+    ]
+  }
+}
